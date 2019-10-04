@@ -15,11 +15,31 @@ public abstract class Animal
         this.name = name;
         this.yearDiscovered = yearDiscovered;
     }
+    public int getId()
+    {
+        return id;
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public int getYearDiscovered()
+    {
+        return yearDiscovered;
+    }
 
     //method 
     public String consume() 
     {
         return "eat";
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Animal: " + getName() + " Year Discovered: " + getYearDiscovered() + "\n";
     }
 
     //methods that vary by animal type

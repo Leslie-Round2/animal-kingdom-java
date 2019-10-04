@@ -24,5 +24,5 @@ public class Mammal extends Animal
         return "live births";
     }
 
-    toString
+
 }
